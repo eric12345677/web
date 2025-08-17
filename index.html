@@ -948,59 +948,59 @@
                     <h3 style="text-align: center; margin-bottom: 2rem;">Solicită Ofertă Gratuită</h3>
                     <form id="contactForm" onsubmit="sendEmail(event)">
                         <div class="form-group">
-                            <label for="user_name">Nume Complet *</label>
-                            <input type="text" id="user_name" name="user_name" required autocomplete="name">
+                            <label for="name">Nume Complet *</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="user_email">Email *</label>
-                            <input type="email" id="user_email" name="user_email" required autocomplete="email">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="user_phone">Telefon</label>
-                            <input type="tel" id="user_phone" name="user_phone" autocomplete="tel">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
                         </div>
                         <div class="form-group">
-                            <label for="user_company">Companie</label>
-                            <input type="text" id="user_company" name="user_company" autocomplete="organization">
+                            <label for="company">Companie</label>
+                            <input type="text" id="company" name="company">
                         </div>
                         <div class="form-group">
-                            <label for="service_type">Tip Serviciu *</label>
-                            <select id="service_type" name="service_type" required>
+                            <label for="service">Tip Serviciu *</label>
+                            <select id="service" name="service" required>
                                 <option value="">Selectează serviciul</option>
-                                <option value="WordPress Starter (299 RON)">WordPress Starter (299 RON)</option>
-                                <option value="WordPress Business (649 RON)">WordPress Business (649 RON)</option>
-                                <option value="WordPress E-commerce (999 RON)">WordPress E-commerce (999 RON)</option>
-                                <option value="HTML Simplu (399 RON)">HTML Simplu (399 RON)</option>
-                                <option value="HTML Avansat (749 RON)">HTML Avansat (749 RON)</option>
-                                <option value="Aplicație Web (1499 RON)">Aplicație Web (1499 RON)</option>
-                                <option value="Pachet Hosting">Pachet Hosting</option>
-                                <option value="Servicii Mentenanță">Servicii Mentenanță</option>
-                                <option value="Consultanță Tehnică">Consultanță Tehnică</option>
-                                <option value="Altele (specificați în mesaj)">Altele (specificați în mesaj)</option>
+                                <option value="wordpress-starter">WordPress Starter (299 RON)</option>
+                                <option value="wordpress-business">WordPress Business (649 RON)</option>
+                                <option value="wordpress-ecommerce">WordPress E-commerce (999 RON)</option>
+                                <option value="html-simplu">HTML Simplu (399 RON)</option>
+                                <option value="html-avansat">HTML Avansat (749 RON)</option>
+                                <option value="aplicatie-web">Aplicație Web (1499 RON)</option>
+                                <option value="hosting">Pachet Hosting</option>
+                                <option value="mentenanta">Servicii Mentenanță</option>
+                                <option value="consultanta">Consultanță Tehnică</option>
+                                <option value="altele">Altele (specificați în mesaj)</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="project_budget">Buget Estimat</label>
-                            <select id="project_budget" name="project_budget">
+                            <label for="budget">Buget Estimat</label>
+                            <select id="budget" name="budget">
                                 <option value="">Selectează bugetul</option>
-                                <option value="Sub 500 RON">Sub 500 RON</option>
-                                <option value="500 - 1000 RON">500 - 1000 RON</option>
-                                <option value="1000 - 2000 RON">1000 - 2000 RON</option>
-                                <option value="2000 - 5000 RON">2000 - 5000 RON</option>
-                                <option value="Peste 5000 RON">Peste 5000 RON</option>
+                                <option value="sub-500">Sub 500 RON</option>
+                                <option value="500-1000">500 - 1000 RON</option>
+                                <option value="1000-2000">1000 - 2000 RON</option>
+                                <option value="2000-5000">2000 - 5000 RON</option>
+                                <option value="peste-5000">Peste 5000 RON</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="project_deadline">Deadline Dorit</label>
-                            <input type="date" id="project_deadline" name="project_deadline">
+                            <label for="deadline">Deadline Dorit</label>
+                            <input type="date" id="deadline" name="deadline">
                         </div>
                         <div class="form-group">
-                            <label for="project_message">Descrierea Proiectului *</label>
-                            <textarea id="project_message" name="project_message" rows="6" required placeholder="Descrie-ne în detaliu ce tip de site dorești, funcționalități specifice, design preferat, etc."></textarea>
+                            <label for="message">Descrierea Proiectului *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Descrie-ne în detaliu ce tip de site dorești, funcționalități specifice, design preferat, etc."></textarea>
                         </div>
                         <div class="form-group">
                             <label>
-                                <input type="checkbox" id="terms_agreement" name="terms_agreement" required style="margin-right: 10px;">
+                                <input type="checkbox" required style="margin-right: 10px;">
                                 Sunt de acord cu <a href="#" style="color: #667eea;">termenii și condițiile</a> și <a href="#" style="color: #667eea;">politica de confidențialitate</a> *
                             </label>
                         </div>
@@ -1013,7 +1013,7 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0;">
                     <div style="background: rgba(255,255,255,0.9); border-radius: 15px; padding: 2rem; text-align: center;">
                         <h3>📧 Email</h3>
-                        <p><a href="mailto:ericandrei007@gmail.com" style="color: #667eea;">ericandrei007@gmail.com</a></p>
+                        <p><a href="mailto:ibraimeric@gmail.com" style="color: #667eea;">ibraimeric@gmail.com</a></p>
                         <p>Răspuns în maxim 24h</p>
                     </div>
                     <div style="background: rgba(255,255,255,0.9); border-radius: 15px; padding: 2rem; text-align: center;">
@@ -1107,7 +1107,7 @@
     <script>
         // Initialize EmailJS
         (function(){
-            emailjs.init("2NkPRAueoBp3VEeIZ"); // Public Key
+            emailjs.init("2NkPRAueoBp3VEeIZ"); // Înlocuiește cu cheia ta publică
         })();
 
         // Tab Navigation
@@ -1149,11 +1149,10 @@
             mobileToggle.classList.toggle('active');
         }
 
-        // Formspree Email Submission (Alternative Method)
-        function sendEmailFormspree(event) {
+        // Enhanced Email Form Submission with EmailJS
+        function sendEmail(event) {
             event.preventDefault();
             
-            const form = document.getElementById('contactForm');
             const submitBtn = document.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             
@@ -1161,54 +1160,49 @@
             submitBtn.innerHTML = '⏳ Se trimite...';
             submitBtn.disabled = true;
             
-            // Create FormData with proper field names
-            const formData = new FormData(form);
-            formData.append('_replyto', formData.get('email'));
-            formData.append('_subject', `Solicitare Oferta WebCraft Pro - ${formData.get('service')}`);
+            const form = document.getElementById('contactForm');
             
-            // Send to Formspree
-            fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
+            // Send email using EmailJS
+            emailjs.sendForm('service_8hm6jie', 'template_qwy63lm', form)
+                .then(function(response) {
                     // Success
                     submitBtn.innerHTML = '✅ Trimis cu succes!';
                     submitBtn.style.background = 'linear-gradient(45deg, #27ae60, #229954)';
                     
+                    // Show success message
                     alert('✅ Mulțumim! Solicitarea ta a fost trimisă cu succes. Îți vom răspunde în maxim 24 de ore.');
                     
                     // Reset form
                     form.reset();
                     
-                } else {
-                    throw new Error('Network error');
-                }
-            })
-            .catch(error => {
-                // Fallback to mailto
-                console.log('Formspree Error:', error);
-                submitBtn.innerHTML = '📧 Deschide Email';
-                submitBtn.style.background = 'linear-gradient(45deg, #f39c12, #e67e22)';
-                
-                // Get form data for mailto fallback
-                const data = {
-                    name: formData.get('name'),
-                    email: formData.get('email'),
-                    phone: formData.get('phone'),
-                    company: formData.get('company'),
-                    service: formData.get('service'),
-                    budget: formData.get('budget'),
-                    deadline: formData.get('deadline'),
-                    message: formData.get('message')
-                };
-                
-                const subject = `Solicitare Oferta WebCraft Pro - ${data.service}`;
-                const body = `
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.background = 'linear-gradient(45deg, #ff6b6b, #ee5a24)';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                    
+                }, function(error) {
+                    // Error - fallback to mailto
+                    console.log('EmailJS Error:', error);
+                    submitBtn.innerHTML = '📧 Deschide Email';
+                    submitBtn.style.background = 'linear-gradient(45deg, #f39c12, #e67e22)';
+                    
+                    // Fallback to mailto
+                    const formData = new FormData(form);
+                    const data = {
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        phone: formData.get('phone'),
+                        company: formData.get('company'),
+                        service: formData.get('service'),
+                        budget: formData.get('budget'),
+                        deadline: formData.get('deadline'),
+                        message: formData.get('message')
+                    };
+                    
+                    const subject = `Solicitare Oferta WebCraft Pro - ${data.service}`;
+                    const body = `
 Solicitare ofertă de la: ${data.name}
 
 DETALII CLIENT:
@@ -1224,21 +1218,20 @@ DETALII PROIECT:
 
 DESCRIEREA PROIECTULUI:
 ${data.message}
-                `;
-                
-                const mailtoLink = `mailto:ibraimeric@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                window.location.href = mailtoLink;
-                
-                alert('Se va deschide clientul tău de email pentru a trimite mesajul.');
-            })
-            .finally(() => {
-                // Reset button after 3 seconds
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.style.background = 'linear-gradient(45deg, #ff6b6b, #ee5a24)';
-                    submitBtn.disabled = false;
-                }, 3000);
-            });
+                    `;
+                    
+                    const mailtoLink = `mailto:ibraimeric@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                    window.location.href = mailtoLink;
+                    
+                    alert('Se va deschide clientul tău de email pentru a trimite mesajul.');
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.background = 'linear-gradient(45deg, #ff6b6b, #ee5a24)';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                });
         }
 
         // Smooth animations on scroll
