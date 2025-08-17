@@ -948,59 +948,59 @@
                     <h3 style="text-align: center; margin-bottom: 2rem;">Solicită Ofertă Gratuită</h3>
                     <form id="contactForm" onsubmit="sendEmail(event)">
                         <div class="form-group">
-                            <label for="name">Nume Complet *</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="user_name">Nume Complet *</label>
+                            <input type="text" id="user_name" name="user_name" required autocomplete="name">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="user_email">Email *</label>
+                            <input type="email" id="user_email" name="user_email" required autocomplete="email">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Telefon</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label for="user_phone">Telefon</label>
+                            <input type="tel" id="user_phone" name="user_phone" autocomplete="tel">
                         </div>
                         <div class="form-group">
-                            <label for="company">Companie</label>
-                            <input type="text" id="company" name="company">
+                            <label for="user_company">Companie</label>
+                            <input type="text" id="user_company" name="user_company" autocomplete="organization">
                         </div>
                         <div class="form-group">
-                            <label for="service">Tip Serviciu *</label>
-                            <select id="service" name="service" required>
+                            <label for="service_type">Tip Serviciu *</label>
+                            <select id="service_type" name="service_type" required>
                                 <option value="">Selectează serviciul</option>
-                                <option value="wordpress-starter">WordPress Starter (299 RON)</option>
-                                <option value="wordpress-business">WordPress Business (649 RON)</option>
-                                <option value="wordpress-ecommerce">WordPress E-commerce (999 RON)</option>
-                                <option value="html-simplu">HTML Simplu (399 RON)</option>
-                                <option value="html-avansat">HTML Avansat (749 RON)</option>
-                                <option value="aplicatie-web">Aplicație Web (1499 RON)</option>
-                                <option value="hosting">Pachet Hosting</option>
-                                <option value="mentenanta">Servicii Mentenanță</option>
-                                <option value="consultanta">Consultanță Tehnică</option>
-                                <option value="altele">Altele (specificați în mesaj)</option>
+                                <option value="WordPress Starter (299 RON)">WordPress Starter (299 RON)</option>
+                                <option value="WordPress Business (649 RON)">WordPress Business (649 RON)</option>
+                                <option value="WordPress E-commerce (999 RON)">WordPress E-commerce (999 RON)</option>
+                                <option value="HTML Simplu (399 RON)">HTML Simplu (399 RON)</option>
+                                <option value="HTML Avansat (749 RON)">HTML Avansat (749 RON)</option>
+                                <option value="Aplicație Web (1499 RON)">Aplicație Web (1499 RON)</option>
+                                <option value="Pachet Hosting">Pachet Hosting</option>
+                                <option value="Servicii Mentenanță">Servicii Mentenanță</option>
+                                <option value="Consultanță Tehnică">Consultanță Tehnică</option>
+                                <option value="Altele (specificați în mesaj)">Altele (specificați în mesaj)</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="budget">Buget Estimat</label>
-                            <select id="budget" name="budget">
+                            <label for="project_budget">Buget Estimat</label>
+                            <select id="project_budget" name="project_budget">
                                 <option value="">Selectează bugetul</option>
-                                <option value="sub-500">Sub 500 RON</option>
-                                <option value="500-1000">500 - 1000 RON</option>
-                                <option value="1000-2000">1000 - 2000 RON</option>
-                                <option value="2000-5000">2000 - 5000 RON</option>
-                                <option value="peste-5000">Peste 5000 RON</option>
+                                <option value="Sub 500 RON">Sub 500 RON</option>
+                                <option value="500 - 1000 RON">500 - 1000 RON</option>
+                                <option value="1000 - 2000 RON">1000 - 2000 RON</option>
+                                <option value="2000 - 5000 RON">2000 - 5000 RON</option>
+                                <option value="Peste 5000 RON">Peste 5000 RON</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="deadline">Deadline Dorit</label>
-                            <input type="date" id="deadline" name="deadline">
+                            <label for="project_deadline">Deadline Dorit</label>
+                            <input type="date" id="project_deadline" name="project_deadline">
                         </div>
                         <div class="form-group">
-                            <label for="message">Descrierea Proiectului *</label>
-                            <textarea id="message" name="message" rows="6" required placeholder="Descrie-ne în detaliu ce tip de site dorești, funcționalități specifice, design preferat, etc."></textarea>
+                            <label for="project_message">Descrierea Proiectului *</label>
+                            <textarea id="project_message" name="project_message" rows="6" required placeholder="Descrie-ne în detaliu ce tip de site dorești, funcționalități specifice, design preferat, etc."></textarea>
                         </div>
                         <div class="form-group">
                             <label>
-                                <input type="checkbox" required style="margin-right: 10px;">
+                                <input type="checkbox" id="terms_agreement" name="terms_agreement" required style="margin-right: 10px;">
                                 Sunt de acord cu <a href="#" style="color: #667eea;">termenii și condițiile</a> și <a href="#" style="color: #667eea;">politica de confidențialitate</a> *
                             </label>
                         </div>
